@@ -1,5 +1,6 @@
 package com.yeaho.newborn.photo.po;
 
+import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -13,6 +14,7 @@ import java.util.Date;
  * @createTime : 2020年05月06日 15:21
  */
 @Entity
+@Data
 public class Photo {
 
     @Id
@@ -25,9 +27,25 @@ public class Photo {
             })
     private String id;
 
+    /**
+     * 存放地址
+     */
     private String address;
 
+    /**
+     * 照片名
+     */
     private String name;
+
+    /**
+     * 照片简介
+     */
+    private String introduction;
+
+    /**
+     * 上传人
+     */
+    private String createBy;
 
     @Column
     private Date createTimestamp;

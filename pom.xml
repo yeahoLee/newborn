@@ -7,6 +7,8 @@
         <module>starter</module>
         <module>photo</module>
         <module>common</module>
+        <module>portal</module>
+        <module>photo.api</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
